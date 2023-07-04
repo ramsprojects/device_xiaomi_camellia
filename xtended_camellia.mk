@@ -15,8 +15,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
 # PixelExperience Stuff
-PROCESSOR_MODEL := Dimensity 700
-XTENDED_BUILD_MAINTAINER := ramshell688
+PROCESSOR_MODEL := DM700
 WITH_GAPPS := true
 TARGET_INCLUDE_NGA := true
 TARGET_GAPPS_ARCH := arm64
