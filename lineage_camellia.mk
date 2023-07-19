@@ -11,6 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Pixel Experience stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit Pixel Launcher Extended
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := glance12
+ICONS_VARIANT := true
+
 # Inherit from camellia device
 $(call inherit-product, device/xiaomi/camellia/device.mk)
 
