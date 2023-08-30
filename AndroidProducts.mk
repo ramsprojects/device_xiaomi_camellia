@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_camellia.mk
+    $(LOCAL_DIR)/spark_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_camellia-user \
-    aosp_camellia-userdebug \
-    aosp_camellia-eng
+    spark_camellia-user \
+    spark_camellia-userdebug \
+    spark_camellia-eng
