@@ -38,6 +38,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_BOOTLOADER_BOARD_NAME := camellia
 TARGET_NO_BOOTLOADER := true
 
+# Disable sparse on all filesystem images
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
