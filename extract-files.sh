@@ -73,6 +73,9 @@ function blob_fixup {
             ;;
         vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
             echo "$(cat ${2}) input" > "${2}"
+	    ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
 	vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
