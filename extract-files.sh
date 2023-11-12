@@ -82,9 +82,7 @@ function blob_fixup {
         vendor/lib64/libaalservice.so)
             ;&
 	vendor/lib64/libcam.utils.sensorprovider.so)
-	    ;&
-	vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so)
-            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "libsensorndkbridge-hidl.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
 	vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
             sed -i 's/1.1/1.2/' "$2"
